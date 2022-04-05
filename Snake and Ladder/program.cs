@@ -11,9 +11,10 @@ namespace Snake_and_Ladder
         static void Main(string[] args)
         {
             Console.WriteLine("welcome to snake and ladder game");
-            int player = 1, playerPosition = 0;
-            Console.WriteLine("player is:{0}", player);
-            Console.WriteLine("player start at position is:{0}", playerPosition);
+            int playerPos = 0, rollDice;
+            Random random = new Random();
+            rollDice = random.Next(1, 7);
+            Console.WriteLine("Rolled Dice number is:" + rollDice);
             Console.ReadLine();
         }
     }
